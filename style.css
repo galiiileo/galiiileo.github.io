@@ -1,4 +1,15 @@
+/* LIGHT MODE (default) */
 :root {
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --header: #f1f5f9;
+  --accent: #16a34a;
+  --text: #020617;
+  --muted: #475569;
+}
+
+/* DARK / TERMINAL MODE */
+.dark {
   --bg: #020617;
   --panel: #020617;
   --header: #020617;
@@ -23,7 +34,6 @@ header {
 }
 
 header h1 {
-  margin: 0 0 0.5rem 0;
   color: var(--accent);
 }
 
@@ -46,29 +56,28 @@ main {
 article {
   background: var(--panel);
   padding: 1.5rem;
-  margin-bottom: 2rem;
   border-left: 4px solid var(--accent);
+  margin-bottom: 2rem;
 }
 
 article h2 {
-  margin-top: 0;
   color: var(--accent);
 }
 
 .meta {
-  font-size: 0.9rem;
   color: var(--muted);
+  font-size: 0.9rem;
 }
 
 code {
   background: #000;
-  padding: 0.2rem 0.4rem;
   color: var(--accent);
+  padding: 0.2rem 0.4rem;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  border-top: 1px solid #022c22;
+  border-top: 1px solid var(--muted);
   color: var(--muted);
 }
